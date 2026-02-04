@@ -1,0 +1,3 @@
+scp ex1_1.py s123456@login.hpc.dtu.dk:Python_HPC/02613_2026_TA/week1/ex1_1.py
+
+

@@ -1,0 +1,3 @@
+ssh s242816@login.hpc.dtu.dk
+
+linuxsh

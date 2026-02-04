@@ -1,0 +1,52 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27726022: <sleeper> in cluster <dcc> Done
+
+Job <sleeper> was submitted from host <n-62-27-21> by user <s242816> in cluster <dcc> at Wed Feb  4 09:38:26 2026
+Job was executed on host(s) <16*n-62-29-32>, in queue <hpc>, as user <s242816> in cluster <dcc> at Wed Feb  4 09:38:26 2026
+</zhome/c2/5/213891> was used as the home directory.
+</zhome/c2/5/213891/Python_HPC/02613_2026_TA/week1> was used as the working directory.
+Started at Wed Feb  4 09:38:26 2026
+Terminated at Wed Feb  4 09:39:27 2026
+Results reported at Wed Feb  4 09:39:27 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J sleeper
+#BSUB -q hpc
+#BSUB -W 2
+#BSUB -n 16
+#BSUB -R "rusage[mem=512MB] span[hosts=1]"
+#BSUB -o outputs/sleeper_%J.out
+#BSUB -e outputs/sleeper_%J.err
+
+sleep 60
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.42 sec.
+    Max Memory :                                 7 MB
+    Average Memory :                             7.00 MB
+    Total Requested Memory :                     8192.00 MB
+    Delta Memory :                               8185.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   61 sec.
+    Turnaround time :                            61 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <outputs/sleeper_27726022.err> for stderr output of this job.
+
