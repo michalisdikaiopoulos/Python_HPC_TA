@@ -1,0 +1,3 @@
+When the array is small enough to fit in the L1 cache, both scaling methods perform similarly.
+As the array grows to fit only in the L2 cache, their performance diverges.
+The reason is that column scaling now incurs cache misses because it accesses almost the entire array, whereas row scaling remains efficient because the row still fits in the L1 cache. As the array size increases, column scaling suffers more from cache misses, including costlier L2 and L3 misses, which makes the performance gap even wider.
